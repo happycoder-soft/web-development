@@ -60,3 +60,33 @@ const new_fun=function(){
     console.log("JAVA SCRIPT PRACTICE TIME")
 }
 new_fun()  //call function
+
+
+// numbers
+const score=100
+console.log(typeof score);
+
+console.log(score.toString());
+console.log(typeof score);
+console.log(score.toFixed(5));
+
+const uk=10000000
+console.log(uk.toLocaleString('en-IN'));
+
+//maths
+
+console.log(Math);
+console.log(Math.abs(-5));
+console.log(Math.min(4,3,1,0,54,55,80,1,0));
+console.log(Math.max(5,9,3,0,1,7,555));
+console.log(Math.round(4.3));
+
+console.log(Math.ceil(4.1));
+console.log(Math.floor(6.9));
+console.log(Math.random());
+
+console.log((Math.random()*10)+1);
+
+const min=20
+const max=30
+console.log((Math.floor(Math.random()*(max-min+1))+min));
