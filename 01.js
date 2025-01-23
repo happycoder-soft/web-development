@@ -134,4 +134,46 @@
 
 // console.log(Array.of(a,b,c));
 
+// object
 
+// const user={
+//     name: "happy",
+//     age: "20",
+//     location: "Bihar",
+//     email: "hk@google.com"
+// }
+
+// console.log(user);
+
+// // symbol using as a key in object
+
+// const mysymbol=Symbol("happy")
+
+// const user1={
+//     name: "happy",
+//     age: "20",
+//     location: "Bihar",
+//     email: "hk@google.com",
+//     [mysymbol]: "Kumar",
+// }
+
+// console.log(typeof user1[mysymbol]);
+// Object.freeze(user1)
+// user1.age="21"
+// console.log(user1);
+
+// user1.greeting=function(){
+//     console.log(`Hello js user,${this.name}`);
+
+// }
+// console.log(user1.greeting());
+
+// // merge two object in one object
+
+// const A={1:"HAPPY",2:"KUMAR"}
+// const B={3:"HAPPY",4:"KUMAR"}
+
+// // const C=Object.assign(A,B);
+// // const C=Object.assign({},A,B);
+// const C={...A,...B}
+// console.log(C)
