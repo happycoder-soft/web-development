@@ -177,3 +177,27 @@
 // // const C=Object.assign({},A,B);
 // const C={...A,...B}
 // console.log(C)
+// const course={
+//     course_name: "HAcking world",
+//     price: "5000",
+//     course_instructor:"KAAL",
+// }
+// const {course_instructor}=course
+// console.log(course_instructor);
+
+// ////    ***** function*****    /////
+
+const king = function(){
+    console.log("happy");
+}
+
+king()
+
+const add = function(n,n1){
+      console.log(n+n1)
+      console.log(n-n1)
+      console.log(n*n1)
+      console.log(n/n1)
+
+}
+add(5,8)
