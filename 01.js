@@ -187,17 +187,74 @@
 
 // ////    ***** function*****    /////
 
-const king = function(){
-    console.log("happy");
-}
+// const king = function(){
+//     console.log("happy");
+// }
 
-king()
+// king()
 
-const add = function(n,n1){
-      console.log(n+n1)
-      console.log(n-n1)
-      console.log(n*n1)
-      console.log(n/n1)
+// const add = function(n,n1){
+//       console.log(n+n1)
+//       console.log(n-n1)
+//       console.log(n*n1)
+//       console.log(n/n1)
 
-}
-add(5,8)
+// }
+// add(5,8)
+
+// function calculatenum(num1){
+//     return num1
+// }
+
+// console.log(calculatenum(200,500,400,600))
+
+// function calculatenum(var1,var2,var3,num1){
+//     return num1
+// }
+
+// console.log(calculatenum(200,500,400,600))
+
+// using objects in function
+
+// const user={
+//     name:"happy",
+//     age: "20"
+// }
+
+// function userdata (obj){
+//     console.log(`user is ${obj.name} and age is ${obj.age}`);
+
+// }
+
+// userdata(user)
+
+// return value by index number 
+
+// const data=[200,6000,400,700,900]
+
+// function getdata(getarray){
+//     return getarray[0]
+// }
+
+// console.log(getdata(data));
+
+
+
+// ******** scope ****** //// {}--this is scope
+
+// let a=84
+// const b=72
+// var c=54
+
+// var d=200
+
+// if(true){
+//     let a=84
+//     const b=72
+//     var c=54
+//     console.log(c)
+// }
+
+// // console.log(a);
+// // console.log(b);
+// console.log(d);
