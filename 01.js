@@ -258,3 +258,44 @@
 // // console.log(a);
 // // console.log(b);
 // console.log(d);
+
+
+// function par(){
+//     const name="happy"
+    
+    
+//     function chi(){
+//         const web="kaal"
+//         console.log(name);
+//     }
+//     // console.log(web);
+//     // chi()
+// }
+// par()
+
+
+// if(true){
+//     const username = "happy"
+//     if(username==="happy"){
+//         const website="kaal"
+//         console.log(username+" "+website);
+//     }
+//     // console.log(website);
+
+//     }
+//     // console.log(username);
+
+// ********* hoisting method *********
+
+// console.log(addone(10));    //this is method 1st of hoisting 
+// function addone(num1){
+//     return num1+5
+// }
+// // console.log(addone(10));
+
+
+// console.log(addtwo(50));                  // this function method cannot access in hoisting method
+// const addtwo =function(num0){
+//     return num0+2
+// }
+// // console.log(addtwo(50));
