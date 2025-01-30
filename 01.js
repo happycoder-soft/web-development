@@ -299,3 +299,58 @@
 //     return num0+2
 // }
 // // console.log(addtwo(50));
+
+// ******** arrow function and this keyword ***********//
+
+// this keyword//
+
+// const user={
+//     name:"kaal",
+//     name:"happy",
+//     state:"bihar",
+
+//     welcome: function(){
+//     console.log(` welcome ${this.name} from ${this.state}`);  //here this use krne ka matlab hai ki isi ka object call hoga
+//     // console.log(this);
+//     }
+// }
+// user.welcome()
+// user.name="rex"
+// user.welcome()
+// console.log(this);
+
+// arrow function///
+
+// const chai=function(){  //-----
+//     let name="kaal"     // 
+//     console.log(name); //     normal function  
+// }                       //
+//                        //
+// chai()                 //------
+
+// const hack = () => {
+//     let state="Bihar"      //======== this is arrow function
+//     console.log(state);
+// }
+// hack()
+
+
+//explit return mrthod because used return keyword
+
+// const user =(num1,num2) => {
+//     return num1+num2
+// }
+// console.log(user(4,3));
+
+//imlicit return method  because in not used return method
+
+// const add=(num1,num2) => num1+num2
+// console.log(add(56,20));
+//second way
+// const adding=(num1,num2) => (num1+num2)
+// console.log(adding(90,21));
+// // return object in implicit method
+
+// const naming=(num9,num5) => ("HAPPY")
+// console.log(naming());
+
