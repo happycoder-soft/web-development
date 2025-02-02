@@ -354,3 +354,17 @@
 // const naming=(num9,num5) => ("HAPPY")
 // console.log(naming());
 
+// IIFE (immediatly invoked function expressions)
+
+// (function chai(){
+//     console.log(`DB connected`);     //named IIFE
+// })();
+
+
+// ( (name) => {
+//     console.log(`DB connected ${name}`);    //  arrow function
+// })('happy')
+
+// (  () => {
+//     console.log(`happy`);     // unnamed IIFE
+// })()
