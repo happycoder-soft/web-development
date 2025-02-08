@@ -262,8 +262,8 @@
 
 // function par(){
 //     const name="happy"
-    
-    
+
+
 //     function chi(){
 //         const web="kaal"
 //         console.log(name);
@@ -368,3 +368,80 @@
 // (  () => {
 //     console.log(`happy`);     // unnamed IIFE
 // })()
+
+
+// / control flow & if else statement
+
+// const balance=500
+// if (balance >= 800) {
+//     console.log("yes");
+// }
+// else{
+//     console.log("no");
+// }
+
+// multiple condition
+
+// const mark=5
+// if (mark <=35) {
+//     console.log("fail");    
+// }
+// else if(mark <= 55){
+//     console.log("3rd division");
+// }
+// else if (mark <= 75) {
+//     console.log("2st division");
+// }
+// else if (mark <=100){
+//     console.log("1st division")
+// }else{
+//     console.log("fail")
+// }
+
+//  switch & break statement
+
+// const month = 3
+// switch (month) {
+//     case 1:
+//         console.log("jan")
+//         break;
+//     case 2:
+//         console.log("feb")
+//         break;
+//     case 3:
+//         console.log("mar")
+//         break;
+//     case 4:
+//         console.log("apr")
+//         break;
+//     default:
+//         console.log("invalid")
+//         break;
+// }
+
+// *********  how to check empty array & object & function
+
+// const user=[50]
+
+// if (user==0) {
+//     console.log("empty");
+// } else{
+//     console.log("not empty")
+// }
+
+// const user1={
+//     name:"happy"
+// }
+
+// if (Object.keys(user1).length==0){
+//     console.log("empty");
+// }else{
+//     console.log("not empty");
+// }
+
+// // if (user1==0) {
+// //     console.log("empty");
+// // }else{
+// //     console.log("not empty");
+// // }
+
