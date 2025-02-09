@@ -445,3 +445,58 @@
 // //     console.log("not empty");
 // // }
 
+// for loop **********
+
+// for (let i = 1; i <=10; i++) {
+//     console.log(`first number : ${i}`);
+//     for(let j=1; j<=10; j++){
+//         console.log(i + "*" + j + "=" +i*j);
+//     }
+    
+// }
+
+// **** for loop in array *****
+
+// let A=["king" ,"kaal","happy","kumar"]
+// console.log(A.length);
+// for (let i = 0; i <= 2; i++) {
+//     const element = A[i];
+//     console.log(element);
+    
+// }
+
+// ******keyword in loop********
+// break & continue
+
+// for (let i = 0; i <= 20; i++) {
+//     if (i==6) {
+//         console.log(`number is detected = ${i}`)
+//         break 
+//         continue
+//     }
+//     console.log(`value of i is ${i}`)
+// }
+
+// **** while & do while loop ****
+
+// let score = 4
+//  do {
+//     console.log(`score is ${score}`);
+//     score++
+//  } while (score<=20);
+
+// let score = 0
+// while (score <=50) {
+//     console.log(`value is ${score}`);
+//     score=score+5
+// }
+
+// *****  while loop in array*****
+
+let Array1=["hii","no","yes"]
+
+let arr=0
+while (arr<Array1.length) {
+    console.log(`value is ${Array1[arr]}`)
+    arr=arr+1
+}
