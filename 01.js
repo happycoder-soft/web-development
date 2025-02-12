@@ -493,10 +493,38 @@
 
 // *****  while loop in array*****
 
-let Array1=["hii","no","yes"]
+// let Array1=["hii","no","yes"]
 
-let arr=0
-while (arr<Array1.length) {
-    console.log(`value is ${Array1[arr]}`)
-    arr=arr+1
+// let arr=0
+// while (arr<Array1.length) {
+//     console.log(`value is ${Array1[arr]}`)
+//     arr=arr+1
+// }
+
+
+// ***** high array loops-*****
+// /forOf loop
+
+const arr=[3,4,2,9,5,2,1]
+const greeti="happy"
+
+for (const greet of greeti) {
+    console.log(`each char is ${greet}`)
+}
+for (const num of arr) {
+    console.log(num);
+}
+
+// ****** map*****
+
+const map=new Map()
+map.set('IN',"INDIa")
+map.set('USA',"Amerika")
+map.set('UK',"LONDON")
+map.set('RUS',"RUSSIA")
+map.set('UAE',"DUBAI")
+
+console.log(map);
+for (const [key,value]of map) {
+    console.log(key,":-",value);
 }
