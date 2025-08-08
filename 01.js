@@ -505,26 +505,26 @@
 // ***** high array loops-*****
 // /forOf loop
 
-const arr=[3,4,2,9,5,2,1]
-const greeti="happy"
+// const arr=[3,4,2,9,5,2,1]
+// const greeti="happy"
 
-for (const greet of greeti) {
-    console.log(`each char is ${greet}`)
-}
-for (const num of arr) {
-    console.log(num);
-}
+// for (const greet of greeti) {
+//     console.log(`each char is ${greet}`)
+// }
+// for (const num of arr) {
+//     console.log(num);
+// }
 
-// ****** map*****
+// // ****** map*****
 
-const map=new Map()
-map.set('IN',"INDIa")
-map.set('USA',"Amerika")
-map.set('UK',"LONDON")
-map.set('RUS',"RUSSIA")
-map.set('UAE',"DUBAI")
+// const map=new Map()
+// map.set('IN',"INDIa")
+// map.set('USA',"Amerika")
+// map.set('UK',"LONDON")
+// map.set('RUS',"RUSSIA")
+// map.set('UAE',"DUBAI")
 
-console.log(map);
-for (const [key,value]of map) {
-    console.log(key,":-",value);
-}
+// console.log(map);
+// for (const [key,value]of map) {
+//     console.log(key,":-",value);
+// }

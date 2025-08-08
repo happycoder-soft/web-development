@@ -1,48 +1,223 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: sans-serif;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px 0px;
+    }
+    .faqmid {
+      max-width: 700px;
+      margin: auto;
+    }
+    .faqitems {
+      border: 1px solid #ccc;
+    }
+    .faqitems h3 {
+      padding: 8px;
+      background-color: yellowgreen;
+      position: relative;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .faqitems h3 span {
+      position: absolute;
+      right: 10px;
+    }
+    .faqitems p {
+      font-size: 15px;
+      padding: 10;
+      line-height: 26px;
+      display: none;
+    }
+    .showans {
+      display: block !important;
+    }
+  </style>
 </head>
 
-<body style="background-color: #212121; color:#fff">
-    <div class="parent">
-        <div class="day">Monday</div>
-        <div class="day">Tuesday</div>
-        <div class="day">Wednesday</div>
-        <div class="day">Thursday</div>
-        <div class="day">Friday</div>
-        <div class="day">Saturday</div>
+<body>
+  <h1>frequently asked questions
+  </h1>
+  <div class="faqmid">
+    <div class="faqitems">
+      <h3>Hello brother <span>+</span></h3>
+      <p>The stated aim of Wikimedia Commons is to provide a media file repository "that makes available public domain
+        and freely-licensed educational media content to all, and that acts as a common repository for the various
+        projects of the Wikimedia Foundation.
+      </p>
     </div>
+
+    <div class="faqitems">
+      <h3>Hello legends <span>+</span></h3>
+      <p>The stated aim of Wikimedia Commons is to provide a media file repository "that makes available public domain
+        and freely-licensed educational media content to all, and that acts as a common repository for the various
+        projects of the Wikimedia Foundation.
+      </p>
+    </div>
+
+    <div class="faqitems">
+      <h3>Hello Coders <span>+</span></h3>
+      <p>The stated aim of Wikimedia Commons is to provide a media file repository "that makes available public domain
+        and freely-licensed educational media content to all, and that acts as a common repository for the various
+        projects of the Wikimedia Foundation.
+      </p>
+    </div>
+
+    <div class="faqitems">
+      <h3>Hello Hacker <span>+</span></h3>
+      <p>The stated aim of Wikimedia Commons is to provide a media file repository "that makes available public domain
+        and freely-licensed educational media content to all, and that acts as a common repository for the various
+        projects of the Wikimedia Foundation.
+      </p>
+    </div>
+  </div>
+  <script>
+    let allQuestion = document.querySelectorAll(".faqitems h3")
+    allQuestion.forEach((item, currentindex) => {
+      item.addEventListener("click", () => {
+        allQuestion.forEach((heading, i) => {
+          if (currentindex != i) {
+            heading.lastElementChild.innerHTML = "+"
+            heading.nextElementSibling.classList.remove("showans")
+          }
+        })
+        if (item.lastElementChild.innerHTML == "+") {
+          item.lastElementChild.innerHTML = "-"
+        }
+        else {
+          item.lastElementChild.innerHTML = "+"
+        }
+        item.nextElementSibling.classList.toggle("showans")
+      })
+    })
+  </script>
 </body>
-<script>
-    const parent = document.querySelector('.parent')
-    console.log(parent);
-    console.log(parent.children);
-    console.log(parent.children[1].innerHTML);
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="01.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body> 
+  <div class="container-fluid"> 
+    <div class="container">
+    <div class="row gx-2 gy-2"> 
+     <div class="col-lg-3 col-sm-6 col-12">
 
-    //using loop
+    <div style="background-color: aqua;" class="p-3 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officia assumenda enim accusamus aspernatur, blanditiis eaque aliquam alias optio ipsa hic excepturi cumque veritatis quam magnam delectus suscipit, nulla dolor!</div>
+     </div> 
+     <div class="col-lg-3 col-sm-6 col-12">
 
-    for (let i = 0; i < parent.children.length; i++) {
-        console.log(parent.children[i].innerHTML);
-    }
-    
-    // change color of element
+    <div style="background-color: rgb(157, 63, 219);" class="p-3 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officia assumenda enim accusamus aspernatur, blanditiis eaque aliquam alias optio ipsa hic excepturi cumque veritatis quam magnam delectus suscipit, nulla dolor!</div>
+     </div> 
+     <div class="col-lg-3 col-sm-6 col-12">
 
-    parent.children[1].style.color = "orange"
-    parent.children[3].style.color = "red"
-    parent.children[4].style.color = "green"
-    parent.children[0].style.color = "yellow"
+    <div style="background-color: rgb(79, 216, 15);" class="p-3 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officia assumenda enim accusamus aspernatur, blanditiis eaque aliquam alias optio ipsa hic excepturi cumque veritatis quam magnam delectus suscipit, nulla dolor!</div>
+     </div> 
+     <div class="col-lg-3 col-sm-6 col-12">
 
-    // move from child to parent
+    <div style="background-color: rgb(193, 152, 26);" class="p-3 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officia assumenda enim accusamus aspernatur, blanditiis eaque aliquam alias optio ipsa hic excepturi cumque veritatis quam magnam delectus suscipit, nulla dolor!</div>
+     </div> 
+     <section class="container-fluid"></section>
+        <div class="container">
+           <div class="row">
+            <div class="col-12 text-center">
+              <h2>Quick FActs</h2>
+            </div>
+           </div>
+           <div class="row row-cols-lg-5 row-cols-sm-2 row-cols-1 gx-5">
+            <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+              <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+             <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+               <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+             <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+              <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+             <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+               <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+             <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+                <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+              <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+             <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+               <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+             <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+              <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+             <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+               <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+             <div class="col">
+              <div class="bg-white text-center py-4">
+              <img src="https://affordableplotschandigarh.com/wp-content/uploads/2022/11/affordable-logo-e1669205779265.png"/>
+                <h3>444</h3>
+              <p>PLOTS</p>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
-    const dayone=document.querySelector('.day')
-    console.log(dayone);
-    console.log(dayone.parentElement);
-    console.log(dayone.nextElementSibling);
-
-</script>
-
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" ></script>
 </html>
