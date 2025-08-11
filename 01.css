@@ -1,0 +1,31 @@
+*{
+      font-family: "Nata Sans", sans-serif;
+}
+
+.whatsappbtn{
+     border: 1px solid #469e3b ;
+     padding: 10px 18px;
+     color: #000000;
+     font-size: 16px;
+}
+.whatsappbtn i{
+     color: #27ae16;
+    
+
+}
+.whatsappbtn:hover{
+     border: 1px solid #27ae16;
+}
+.call{
+     color: white;
+     background:linear-gradient(to right, #0ACEFE, #2699FB);
+}
+ 
+.bannerContent h1{
+     font-size: 52px;
+     font-weight:700px;
+}
+.bannerContent h1 span{
+     color: #2699FB;
+     background: url("") no repeat bottom;
+}
