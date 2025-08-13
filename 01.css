@@ -18,7 +18,7 @@
 }
 .call{
      color: white;
-     background:linear-gradient(to right, #0ACEFE, #2699FB);
+     background:linear-gradient(to right, #0ACEFE, hsl(208, 96%, 57%));
 }
  
 .bannerContent h1{
@@ -26,6 +26,59 @@
      font-weight:700px;
 }
 .bannerContent h1 span{
+     color: #1cb0d6;
+}
+.bannerContent p{
+     font-size: 22px;
+}
+.bannerContent ul{
+     list-style: none;
+}
+.bannerContent ul li{
+     font-size: 18px;
+}    
+
+.bannerContent ul li i{
      color: #2699FB;
-     background: url("") no repeat bottom;
+}
+.bannerContentBtn button{
+     width: 50%;
+     padding: 10px 0px;
+     border-radius: 5px;
+}
+.bannerContentBtn button:first-child{
+     color: white;
+     background: linear-gradient(to right, #0ACEFE, #2699FB);
+}
+.bannerform{
+    
+     padding: 50px;
+     border-radius: 10px;
+}
+.bannerform h3{
+     font-size: 18px;
+     font-weight: 700;
+}
+.bannerform button{
+     width: 100%;
+     padding: 10px 0px;
+     background: linear-gradient(to right, #0ACEFE, #2699FB);
+     color: white;
+}
+.counterSection h2{
+     font-size: 30px;
+     font-weight: 700;
+     color: #2699FB;
+}
+.highlight-section{
+     background-color: #f2f5f9;
+}
+.highlight-section h2{
+     color: #010102;
+     font-size: 36px;
+     font-weight: 700;
+}
+.highlight-section p{
+     font-size: 18px;
+     color: #000000;     
 }
